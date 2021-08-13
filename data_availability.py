@@ -11,10 +11,8 @@ def continue_with_data_pull():
         dt.date.today(), dt.time(hour=16, minute=30))
 
     # Calculate how far you are from open or close in minutes
-    time_until_open = (
-        (market_open_time_today - current_time).total_seconds()) / 60
-    time_until_close = (
-        (market_close_time_today - current_time).total_seconds()) / 60
+    time_until_open = ((market_open_time_today - current_time).total_seconds()) / 60
+    time_until_close = ((market_close_time_today - current_time).total_seconds()) / 60
 
     # If you are within 30 minutes of open or close it will tell you to wait
     decision = "Yes"

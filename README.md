@@ -1,6 +1,11 @@
 # stock-analysis
 Used to pull and analyze the daily closing stock price for 5000 publicly traded companies
 
+|--main.py
+|--data_availability.py
+
+
+
 ├── main.py \n
 
 ├── data_availability.py

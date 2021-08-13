@@ -7,7 +7,7 @@ File breakdown: <br />
 |─ raw_yahoo_data_collection.py   &nbsp;&nbsp;&nbsp;&nbsp;# Pulls the Yahoo Finance data for each company and stores in csv files <br />
 |─ compile_data.py                &nbsp;&nbsp;&nbsp;&nbsp;# Removes everything except closing price and combines all data into one csv file <br />
 |─ create_list_of_company_data.py &nbsp;&nbsp;&nbsp;&nbsp;# Creates Pandas dataframe for the closing price data <br />
-|─ calculations.py                &nbsp;&nbsp;&nbsp;&nbsp;# Reads in the data and performs basic calculations <br />
+|─ calculations.py                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;# Reads in the data and performs basic calculations <br />
 |─ README.md <br />
 
 Hypothesis:<br />

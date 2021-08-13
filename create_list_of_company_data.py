@@ -15,8 +15,7 @@ def create_list():
 
     current_time = dt.datetime.now()
 
-    file_name = 'nyse_nasdaq_closes_{}.csv'.format(
-        current_time.strftime('%d.%m.%Y'))
+    file_name = 'nyse_nasdaq_closes_{}.csv'.format(current_time.strftime('%d.%m.%Y'))
 
     # Create a new dataframe of the most recent closing balances
     df = pd.read_csv(file_name, index_col=0)

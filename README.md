@@ -2,8 +2,11 @@
 Used to pull and analyze the daily closing stock price for 5000 publicly traded companies
 
 ├── main.py \n
+
 ├── data_availability.py
+
 ├── dir1
+
 ├── dir1
 ├── dir1
 ├── dir1

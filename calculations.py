@@ -34,32 +34,26 @@ def analyze_data():
     for company in data_to_analyze:
         try:
             # Calculate the maximum before the crash
-            maximum_before_crash = max(
-                company[2:crash_date_index_for_companies])
+            maximum_before_crash = max(company[2:crash_date_index_for_companies])
             index_of_high = company.index(maximum_before_crash)
             # minum since peak but before June recovery high
-            minimum_since_peak = min(
-                i for i in company[index_of_high:june_recovery_peak_index_for_company] if i > 0)
+            minimum_since_peak = min(i for i in company[index_of_high:june_recovery_peak_index_for_company] if i > 0)
             index_of_min = company.index(minimum_since_peak)
             # Calculate maximum since minimum
             maximum_since_crash = max(company[index_of_min:])
             index_of_max_since_crash = company.index(maximum_since_crash)
 
             # Percentage drop from first high to first trough
-            percentage_drop_from_peak = (
-                maximum_before_crash - minimum_since_peak) / maximum_before_crash
+            percentage_drop_from_peak = (maximum_before_crash - minimum_since_peak) / maximum_before_crash
             # calculating the recovery between the lowest drop and June recovery
-            percentage_increase_first_recovery = (
-                maximum_since_crash - minimum_since_peak) / minimum_since_peak
+            percentage_increase_first_recovery = (maximum_since_crash - minimum_since_peak) / minimum_since_peak
             # Remaining potential growth
             latest_close = company[-1]
-            remaining_potential_gain = (
-                maximum_before_crash - latest_close) / latest_close
+            remaining_potential_gain = (maximum_before_crash - latest_close) / latest_close
 
             # Calculate from beginning of period to before the crash
             # Want to remove anything that has been dropping over time
-            growth_direction = (
-                company[crash_date_index_for_companies] - company[2]) / company[2]
+            growth_direction = (company[crash_date_index_for_companies] - company[2]) / company[2]
 
             if (maximum_before_crash > 0 and minimum_since_peak > 0 and latest_close > 0 and growth_direction < 100000000 and growth_direction >= .1 and remaining_potential_gain > 0.2):
                 usable_company_data.append([

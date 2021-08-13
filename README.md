@@ -7,4 +7,4 @@ Used to pull and analyze the daily closing stock price for 5000 publicly traded 
 |─ compile_data <br />
 |─ create_list_of_company_data <br />
 |─ calculations <br />
-|- README.md <br />
+|─ README.md <br />

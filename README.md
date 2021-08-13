@@ -33,22 +33,7 @@ Example: <br />
 
 Sucesses: <br />
 Below are some of the companies that this program identified as having high returns following the pandemic crash.
-
-Avis Budget Group Inc. (CAR)
-
-![image](https://user-images.githubusercontent.com/41634809/129396589-32745a31-6df9-4bcc-97f0-be16d9bdb356.png)
-
-Cracker Barrel Old Country Store, Inc. (CBRL)
-
-![image](https://user-images.githubusercontent.com/41634809/129396701-a3fe2980-82e1-4279-8af3-3c1229b28f66.png)
-
-Tupperware Brands Corporation (TUP)
-
-![image](https://user-images.githubusercontent.com/41634809/129396967-655403c4-4ed5-4cf4-8df2-83f25536d48c.png)
-
-Dave & Buster's Entertainment, Inc. (PLAY)
-
-![image](https://user-images.githubusercontent.com/41634809/129397069-b9f1b7a8-08d7-4ec5-b567-d194071e7354.png)
+![image](https://user-images.githubusercontent.com/41634809/129398540-a113a9c5-91cf-4d85-8eca-b22590738798.png)
 
 
 Possible Enhancements to the Code:

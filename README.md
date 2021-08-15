@@ -21,7 +21,15 @@ Process: <br />
 2) Pull the financial data from Yahoo Finance using a provided API. The data included in this pull was: daily high, daily low, open price, close price, volume, and adjusted close.
 3) Remove all data except for the closing prices and combine all of the data into one file.
 4) Transfer that data into a pandas dataframe.
-5) Perform calculations on each individual company and then sort all of the companies given the above parameters. The priority was indentifying the companies that were most likley to have the largest potential recovery. 
+5) Perform calculations on each individual company and then sort all of the companies given the above parameters. The priority was indentifying the companies that were most likley to have the largest potential recovery.<br />
+&nbsp;&nbsp;&nbsp;&nbsp; Calculations include:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Finding the maximum before the February crash<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Finding the minimum after the February crash<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Finding the maximum since the February crash<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Finding the low point after the February crash<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Finding the percentage gain between the minimum and maximum after the crash<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Finding the potential gain between current price and the maximum before the crash<br />
+
 6) Combining market knowledge and daily news on companies to figure out which of the highest potential companies were and were not heading towards significant financial troubles.
 7) Create a list of companies that could have significant returns.
 
